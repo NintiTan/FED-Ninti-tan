@@ -27,5 +27,155 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Section: Shipping information */
+
+header div:first-of-type {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+header div:first-of-type p {
+	font-family: 'Helvetica Neue', sans-serif;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+	font-size: 0.8em;
+	text-align: center;
+	color: white;
+	padding: 1.25em;
+}
+
+/* Section: Navigation */
+
+header div:nth-of-type(2) {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+header div:nth-of-type(2) nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1.25em;
+}
+
+header div:nth-of-type(2) nav a {
+
+}
+
+/* Body */
+
+/* Section: Stormstride */
+
+#Stormstride {
+	position: relative;
+	width: 100%;
+	height: 70vh;
+}
+
+#Ss_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 65vh;
+	z-index: -1;
+}
+
+#Video {
+	width: 100%;
+   height: 100%; 
+   object-fit: cover;
+}
+
+#Ss_content {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 1;
+	color: white;
+}
+
+#Ss_content img {
+	width: 12em;
+}
+
+#Ss_content p {
+	padding: 2em;
+	font-weight: 500;
+	font-size: 0.9em;
+	width: 30em;	
+}
+
+#Ss_content button {
+	border-radius: 3em;
+	padding: 0.7em 3em 0.7em 3em;
+	background-color: white;
+	font-weight: 800;
+
+}
+
+/* Section: Categories */
+
+#Cat-xscroll {
+	width: 100%;
+	height: 28em;
+    overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#Categories {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	min-width: max-content;
+	padding: 1em 3em 1em 3em;
+}
+
+#Categories .Category {
+	width: 18em;
+	height: 18em;
+	display: flex;
+	flex-direction: column;	
+	flex-shrink: 0;
+}
+
+#Categories .Category img {
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	border-radius: 0.5em;
+}
+
+#Categories .Category h2 {
+	font-size: 1.25em;
+	margin: 0.7em 0em 0.6em 0em;
+	font-weight: 800;
+}
+
+#Categories .Category button {
+	width: 25%;
+	border-radius: 3em;
+	padding: 1em 4em 1em 4em;
+	background-color: black;
+	color: white;
+	font-weight: 800;
+	text-align: center;  
+    display: flex;        
+    justify-content: center;  
+    align-items: center;
+}
+
+
 
