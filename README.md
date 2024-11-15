@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homescreen 
-  <img src="readme-images/homescreen.png" width="375px" alt="screenshot van de homescreen">
+  <img src="readme-images/Homescreen.png" width="375px" alt="screenshot van de homescreen">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Trailrunning
-  <img src="readme-images/howtolayer.png" width="375px" alt="screenshot van de how to layer pagina">
+  <img src="readme-images/Howtolayer.png" width="375px" alt="screenshot van de how to layer pagina">
  
 </details>
 
