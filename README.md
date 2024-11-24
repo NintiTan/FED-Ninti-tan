@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Trailrunning
-  <img src="readme-images/Howtolayer.png" width="375px" alt="screenshot van de how to layer pagina">
+  <img src="readme-images/productdetail.png" width="375px" alt="screenshot van product detail pagina">
  
 </details>
 
