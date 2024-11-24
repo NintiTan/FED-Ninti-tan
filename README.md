@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homescreen.png" width="375px" alt="screenshot van de homescreen">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Trailrunning
+  Product detail
   <img src="readme-images/productdetail.png" width="375px" alt="screenshot van product detail pagina">
  
 </details>

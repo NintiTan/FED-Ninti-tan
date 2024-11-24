@@ -33,3 +33,208 @@
 	font-family: 'Helvetica Neue', sans-serif;
 }
 
+
+/* Header */
+
+/* Shipping information */
+
+header button {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 1.5em;
+	width: 100%;
+	font-weight: 500;
+	font-size: 0.75em;
+}
+
+/* Navigation */
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+header nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header > img {
+	width: 7em;
+}
+
+header img {
+	margin: 1em;
+}
+
+header nav ul li img {
+	width: 1.25em;
+}
+
+/* Main */
+
+/* Hero */
+
+main div:first-of-type {
+	position: relative;
+}
+
+main div:first-of-type img {
+	height: 23em;
+	width: 100%;
+	filter: brightness(0.6);
+	object-fit: cover;
+	z-index: -1;
+}
+
+main div:first-of-type section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+	width: 75%;
+	gap: 0.5em;
+	z-index: 1;
+}
+
+main div:first-of-type section h1, main div:first-of-type section p {
+	color: white;
+}
+
+main div:first-of-type section h1 {
+	font-size: 1.75em;
+	font-weight: 500;
+}
+
+main div:first-of-type section p {
+	width: 100%;
+	font-size: 0.7em;
+	font-weight: 500;
+}
+
+main div:first-of-type section a {
+	background-color: white;
+	color: black;
+	border: none;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.75em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 2em;
+}
+
+/* Categories */
+
+main div:nth-of-type(2) {
+	overflow-x: auto;
+	width: 100%;
+	scroll-snap-type: x mandatory;
+}
+
+main div:nth-of-type(2)::-webkit-scrollbar {
+    display: none;
+}
+
+main div:nth-of-type(2) ul{
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	margin: 0;
+	padding: 2em 0em;
+}
+
+main li {
+	display: flex;
+	flex-direction: column;
+	width: 20em;
+	gap: 0.5em;
+	scroll-snap-align: start;
+}
+
+main li img {
+	width: 100%;
+	height: 20em;
+	object-fit: cover;
+	border-radius: 0.5em;
+}
+
+main li h2 {
+	font-size: 0.9em;
+}
+
+main li a:nth-of-type(2) {
+	background-color: black;
+	color: white;
+	border: none;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.75em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 2em;
+}
+
+/* Jirishanca */
+
+main div:nth-of-type(3) {
+	position: relative;
+}
+
+main div:nth-of-type(3) img {
+	width: 100%;
+	height: 50em;
+	object-fit: cover;
+	z-index: -1;
+	filter: brightness(0.6);
+}
+
+main div:nth-of-type(3) section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: absolute;
+	justify-content: center;
+	text-align: center;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 75%;
+	gap: 0.75em;
+	z-index: 1;
+}
+
+main div:nth-of-type(3) section h2, main div:nth-of-type(3) section p {
+	color: white;
+}
+
+main div:nth-of-type(3) section h2 {
+	font-size: 1.75em;
+	font-weight: 500;
+}
+
+main div:nth-of-type(3) section p {
+	font-size: 0.7em;
+	font-weight: 500;
+}
+
+main div:nth-of-type(3) section a {
+	background-color: white;
+	color: black;
+	border: none;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.75em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 2em;
+}
