@@ -31,7 +31,42 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Helvetica Neue', sans-serif;
+	box-sizing: border-box;
 }
+
+body main div > img {
+	width: 100%;
+	height: 50em;
+	object-fit: cover;
+	z-index: -1;
+	filter: brightness(0.4);
+}
+
+body main div > section {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	width: 75%;
+	gap: 0.75em;
+	z-index: 1;
+}
+
+body main div a:not(:has(img)) {
+	border: none;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.75em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 2em;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+
 
 
 /* Header */
@@ -76,6 +111,10 @@ header nav ul li img {
 	width: 1.25em;
 }
 
+
+
+
+
 /* Main */
 
 /* Hero */
@@ -99,7 +138,7 @@ main div:first-of-type section {
 	position: absolute;
 	top: 50%;
     left: 15%;
-    transform: translate(-15%, -50%);
+    transform: translate(-15%, -50%); /* zodat de content over de afbeelding heen ligt */
 	width: 75%;
 	gap: 0.5em;
 	z-index: 1;
@@ -123,21 +162,19 @@ main div:first-of-type section p {
 main div:first-of-type section a {
 	background-color: white;
 	color: black;
-	border: none;
-	width: fit-content;
-	text-decoration: none;
-	font-size: 0.75em;
-	font-weight: 600;
-	border-radius: 3em;
-	padding: 0.75em 2em;
 }
+
+
+
+
 
 /* Categories */
 
 main div:nth-of-type(2) {
 	overflow-x: auto;
 	width: 100%;
-	scroll-snap-type: x mandatory;
+	padding-left: 1em;
+    padding-right: 1em;
 }
 
 main div:nth-of-type(2)::-webkit-scrollbar {
@@ -175,14 +212,13 @@ main li h2 {
 main li a:nth-of-type(2) {
 	background-color: black;
 	color: white;
-	border: none;
-	width: fit-content;
-	text-decoration: none;
-	font-size: 0.75em;
-	font-weight: 600;
-	border-radius: 3em;
-	padding: 0.75em 2em;
 }
+
+
+
+
+
+
 
 /* Jirishanca */
 
@@ -190,27 +226,12 @@ main div:nth-of-type(3) {
 	position: relative;
 }
 
-main div:nth-of-type(3) img {
-	width: 100%;
-	height: 50em;
-	object-fit: cover;
-	z-index: -1;
-	filter: brightness(0.6);
-}
-
-main div:nth-of-type(3) section {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	position: absolute;
+body div:nth-of-type(3) section {
 	justify-content: center;
 	text-align: center;
 	top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-	width: 75%;
-	gap: 0.75em;
-	z-index: 1;
+    transform: translate(-50%, -50%); /* zodat de content over de afbeelding heen ligt */
 }
 
 main div:nth-of-type(3) section h2, main div:nth-of-type(3) section p {
@@ -230,11 +251,95 @@ main div:nth-of-type(3) section p {
 main div:nth-of-type(3) section a {
 	background-color: white;
 	color: black;
-	border: none;
-	width: fit-content;
-	text-decoration: none;
-	font-size: 0.75em;
-	font-weight: 600;
-	border-radius: 3em;
-	padding: 0.75em 2em;
+
 }
+
+
+
+
+
+/* Latest stories  NOG GOED VORMGEVEN*/ 
+main > h2, main > a {
+	display: inline-block; /* zodat ze naast elkaar komen */
+}
+  
+main > h2 {
+font-size: 1.25em;
+margin-left: 1em;
+margin-top: 2em;
+}
+
+main > a {
+font-size: 0.8em;
+margin-left: 0.5em;
+text-decoration: underline;
+color: black;
+font-weight: 600;
+
+}
+
+main div:nth-of-type(4) {
+	overflow-x: auto;
+	width: 100%;
+	padding-left: 1em;
+    padding-right: 1em;
+	margin-bottom: 4em;
+}
+
+main div:nth-of-type(4)::-webkit-scrollbar {
+    display: none;
+}
+
+main div:nth-of-type(4) ul{
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	margin: 0;
+	padding: 2em 0em;
+}
+
+
+
+
+
+/* End bottom trawling */
+
+main div:nth-of-type(5) {
+	position: relative;
+}
+
+main div:nth-of-type(5) section {
+	top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%); /* zodat de content over de afbeelding heen ligt */
+}
+
+main div:nth-of-type(5) section h2, main div:nth-of-type(5) section p {
+	color: white;
+}
+
+main div:nth-of-type(5) section h2 {
+	font-size: 1.75em;
+	font-weight: 500;
+}
+
+main div:nth-of-type(5) section p {
+	font-size: 0.7em;
+	font-weight: 500;
+}
+
+main div:nth-of-type(5) section a {
+	background-color: white;
+	color: black;
+}
+
+
+/* Footer */
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+/* Promises */
