@@ -16,3 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     hiddenElements.forEach(el => observer.observe(el));
   });
+
+let currentImage = 0;
+
+function showImage(current) {
+  const carousel = document.querySelector('div > div');
+  const totalImages = carousel.children.length;
+  currentImage = (current + totalImages) % totalImages;
+  carousel.style.transform = `TranslateX(-${currentImage * 100}%)`;
+}
+
+function nextImage() {
+  showImage(currentImage + 1);
+}
+
+function prevImage() {
+  showImage(currentImage - 1);
+}
+
+showImage(0);
