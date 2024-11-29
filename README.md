@@ -112,10 +112,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Alle sections moeten een h? bevatten
+  - Eerst alle HTML schrijven, dan pas beginnen aan de CSS
+  - Nieuwe tweede pagina kiezen
+  - Breakdown schetsen toevoegen
 
 </details>
 
@@ -135,20 +135,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Ninti      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Tot in hoever-  | en dit             | en ik dit    | en dan ik dat    |
+  | re moeten we met | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Javascript          | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - HTML opdelen in sections
+  - Procesverslag aanvullen
+  - Veel divjes kunnen worden vervangen met lists
+  - Javascript menu
+  - link naar tweede pagina
 
 </details>
 
