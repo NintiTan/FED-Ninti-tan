@@ -37,6 +37,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   https://eu.patagonia.com/gb/en/home/
+  https://eu.patagonia.com/gb/en/product/womens-synchilla-marsupial-half-zip-fleece/22965.html?dwvar_22965_color=SYBL
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homescreen 
@@ -150,6 +151,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Veel divjes kunnen worden vervangen met lists
   - Javascript menu
   - link naar tweede pagina
+  - RESPONSIVE
 
 </details>
 
