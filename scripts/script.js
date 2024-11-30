@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let currentImage = 0;
 
+
+
+// product carousel
+
 function showImage(current) {
   const carousel = document.querySelector('div > div');
   const totalImages = carousel.children.length;
