@@ -464,7 +464,7 @@ font-weight: 600;
 
 /* heading product */
 
-#detailpage a:first-of-type {
+#detailpage > a:first-of-type {
 	display: flex;
 	gap: 0.75em;
 	text-decoration: none;
@@ -482,13 +482,13 @@ font-weight: 600;
 	
 }
 
-#detailpage h1 {
+#detailpage section:first-of-type h1 {
 	font-size: 1.25em;
 	width: 70%;
 	margin-left: 0.75em;
 }
 
-#detailpage > button:first-of-type {
+#detailpage section:first-of-type button {
 	display: flex;
 	flex-direction: row;
 	border: none;
@@ -497,16 +497,16 @@ font-weight: 600;
 	gap: 0.5em;
 }
 
-#detailpage > button:first-of-type img {
+#detailpage section:first-of-type button img {
 	width: 1.25em;
 }
 
-#detailpage > button:first-of-type p {
+#detailpage section:first-of-type button p {
 	text-decoration: underline;
 	font-weight: 500;
 }
 
-#detailpage > h2:first-of-type {
+#detailpage section:first-of-type h2 {
 	font-size: 1em;
 	margin-left: 1em;
 	margin-bottom: 1.5em;
@@ -519,41 +519,42 @@ font-weight: 600;
 
 /* product informatie */
 
-#detailpage > h2:nth-of-type(2), #detailpage > p:first-of-type {
+#detailpage section:nth-of-type(2) h2, #detailpage section:nth-of-type(2) p:first-of-type {
 	display: inline-block;
 	font-size: 0.8em;
 
 }
 
-#detailpage > h2:nth-of-type(2) {
+#detailpage section:nth-of-type(2) h2 {
 	margin-left: 1em;
 	margin-bottom: 0.5em;
 }
 
 
-#detailpage > ul:first-of-type {
+#detailpage section:nth-of-type(2) ul {
 	display: flex;
 	flex-direction: row;
 	gap: 0.75em;
 	margin-left: 0.75em;
+	margin-bottom: 1em;
 	list-style: none;
 }
 
-#detailpage > ul:first-of-type li button {
+#detailpage section:nth-of-type(2) ul li button {
 	border-radius: 50%;
 	border: 0.1em solid black;
 	padding: 1.2em;
 }
 
-#detailpage > ul:first-of-type li:first-of-type button{
+#detailpage section:nth-of-type(2) ul li:first-of-type button{
 	background-color: rgb(33, 33, 49);
 }
 
-#detailpage > ul:first-of-type li:nth-of-type(2) button{
+#detailpage section:nth-of-type(2) ul li:nth-of-type(2) button{
 	background-color: rgb(197, 98, 11);
 }
 
-#detailpage > ul:first-of-type li:nth-of-type(3) button {
+#detailpage section:nth-of-type(2) ul li:nth-of-type(3) button {
 	background-color: rgb(228, 218, 210);
 }
 
@@ -561,11 +562,242 @@ font-weight: 600;
 
 /* Sizes */
 
+#detailpage section:nth-of-type(3) h2 {
+	display: inline-block;
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+	font-size: 0.8em;
+}
+
+#detailpage section:nth-of-type(3) a {
+	display: inline-block;
+	font-size: 0.8em;
+	text-decoration: underline;
+	color: black;
+}
+
+#detailpage section:nth-of-type(3) ul {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0em 0.75em;
+	margin-bottom: 1em;
+}
+
+#detailpage section:nth-of-type(3) ul li {
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+	width: 31%;
+	height: 3.5em;
+	border-radius: 0.25em;
+}
+
+#detailpage section:nth-of-type(3) ul li button{
+	font-size: 0.75em;
+	font-weight: 600;
+	background-color: whitesmoke;
+	border: none;
+
+}
+
+
+/* special offers */
+
+#detailpage section:nth-of-type(4) h2, #detailpage section:nth-of-type(4) p {
+	font-size: 0.9em;
+	margin-left: 0.75em;
+}
+
+#detailpage section:nth-of-type(4) p {
+	margin-bottom: 1.5em;
+	margin-top: 0.25em;
+	font-weight: 400;
+}
+
+
+
+/* add to bag */
+
+#detailpage > button:first-of-type {
+	background-color: black;
+	padding: 1.5em;
+	border-radius: 4em;
+	margin: 0 0.75em;
+	border: none;
+}
+
+#detailpage > button:first-of-type img {
+	width: 1.5em;
+}
+
+#detailpage > button:nth-of-type(2) {
+	text-align: center;
+	background-color: black;
+	padding: 1.5em 7.8em;
+	font-weight: 600;
+	border-radius: 4em;
+	border: none;
+	color: white;
+	
+}
+
+#detailpage > p:first-of-type, #detailpage > p:nth-of-type(2){
+	margin: 1.5em 0.75em 0 0.75em;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+
+
+
+/* details */
+
+#detailpage > details {
+	margin: 1.5em 0.75em;
+	padding: 0.5em 0em;
+	border-top: 0.15em solid black;
+}
+
+#detailpage > details summary {
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+#detailpage > details:first-of-type ul {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.9em;
+	gap: 0.5em;
+	margin-top: 2.5em;
+	margin-left: 1.25em;
+	line-height: 1.5em;
+}
+
+#detailpage details:first-of-type ul li button, #detailpage details:first-of-type ul li a {
+	font-weight: 600;
+	border: none;
+	text-decoration: underline;
+	background-color: white;
+	color: black;
+	font-size: 0.9em;
+}
+
+
+#detailpage details:nth-of-type(2) h2, #detailpage details:nth-of-type(3) h2 {
+	font-size: 0.9em;
+	margin: 0 0.75em;
+}
+
+#detailpage details:nth-of-type(2) h2:first-of-type, #detailpage details:nth-of-type(3) h2:first-of-type {
+	margin-top: 2.5em;
+}
+
+#detailpage details:nth-of-type(2) p, #detailpage details:nth-of-type(3) p {
+	font-size: 0.9em;
+	margin: 0.25em 0.75em 1.5em 0.75em;
+}
+
+
+
+/* icons */
 
 
 
 
 
+
+
+/* built for years */
+
+#detailpage section:nth-of-type(5) {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0.75em 3em 0.75em;
+	gap: 0.5em;
+	padding: 1.5em;
+	border-radius: 0.5em;
+	background-color: whitesmoke;
+}
+
+#detailpage section:nth-of-type(5) h2 {
+	font-size: 0.9em;
+	margin-bottom: 0.5em;
+}
+
+#detailpage section:nth-of-type(5) p {
+	font-size: 0.8em;
+}
+
+
+
+/* buyers info */
+
+#detailpage section:nth-of-type(6) {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 1em;
+	height: 4em;
+}
+
+#detailpage section:nth-of-type(6) img {
+	width: 9em;
+	margin-bottom: 0.5em;
+}
+
+#detailpage section:nth-of-type(6) h2 {
+	font-size: 1em;
+	margin-bottom: 0.5em;
+}
+
+#detailpage section:nth-of-type(6) p {
+	font-size: 0.8em;
+	font-weight: 600;
+	color: rgb(71, 71, 71);
+	margin-bottom: 0.5em;
+	margin-left: 0.25em;
+}
+
+
+
+
+/* activities */
+#detailpage section:nth-of-type(7) {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0.75em 3em 0.75em;
+	gap: 1em;
+	
+}
+
+#detailpage section:nth-of-type(7) h2 {
+	font-size: 1em;
+	margin-bottom: 0.5em;
+}
+
+#detailpage section:nth-of-type(7) p {
+	font-size: 0.8em;
+	font-weight: 600;
+}
+
+#detailpage section:nth-of-type(7) p:nth-of-type(2) {
+	color: rgb(71, 71, 71);
+} 
+
+#detailpage section:nth-of-type(7) button {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 1em 1.15em 1em 1.15em;
+	font-weight: 600;
+	font-size: 0.8em;
+	width: 50%;
+	border-radius: 5em;
+	margin-top: 0.5em;
+}
 
 
 
