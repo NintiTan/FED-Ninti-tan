@@ -55,3 +55,24 @@ function prevImage() {
 showImage(0);
 
 
+// Impact radio buttons
+
+const howItsMadeRadio = document.getElementById('how-its-made');
+const whereItsMadeRadio = document.getElementById('where-its-made');
+const howItsMadeList = document.querySelector('#detailpage > div:nth-of-type(2)');
+const whereItsMadeList = document.querySelector('#detailpage > div:nth-of-type(3)');
+
+function updateListVisibility() {
+    if (howItsMadeRadio.checked) {
+        howItsMadeList.style.display = 'block';
+        whereItsMadeList.style.display = 'none';
+    } else if (whereItsMadeRadio.checked) {
+        howItsMadeList.style.display = 'none';
+        whereItsMadeList.style.display = 'block';
+    }
+}
+
+updateListVisibility();
+
+howItsMadeRadio.addEventListener('change', updateListVisibility);
+whereItsMadeRadio.addEventListener('change', updateListVisibility);

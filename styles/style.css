@@ -49,6 +49,10 @@ body {
 	overflow-x: hidden;
 }
 
+p {
+	letter-spacing: 0.04em;
+}
+
 
 
 /* Animations */
@@ -287,7 +291,6 @@ font-weight: 600;
 	flex-direction: column;
 	width: 20em;
 	gap: 0.5em;
-	scroll-snap-align: start;
 }
 
 
@@ -436,7 +439,7 @@ font-weight: 600;
 	right: 1em;
 }
 
-#detailpage div p:first-of-type, #detailpage div p:nth-of-type(2) {
+#detailpage > div:first-of-type p:first-of-type, #detailpage > div p:nth-of-type(2) {
 	color: black;
 	background-color: white;
 	padding: 0.5em 0.75em;
@@ -447,12 +450,12 @@ font-weight: 600;
 	font-weight: 600;
 }
 
-#detailpage div p:first-of-type {
+#detailpage > div:first-of-type p:first-of-type {
 	top: 90%;
 	left: 4%;
 }
 
-#detailpage div p:nth-of-type(2) {
+#detailpage > div:first-of-type p:nth-of-type(2) {
 	top: 90%;
 	left: 88%;
 
@@ -763,7 +766,6 @@ font-weight: 600;
 
 
 
-
 /* activities */
 #detailpage section:nth-of-type(7) {
 	display: flex;
@@ -803,6 +805,410 @@ font-weight: 600;
 
 
 
+
+/* search */
+
+#detailpage section:nth-of-type(8) form input{
+	width: 95%;
+	margin: 0 0.75em;
+	padding: 0.8em;
+	border: 1px solid rgb(81, 81, 81);
+	border-radius: 0.25em;
+}
+
+#detailpage section:nth-of-type(8) h2 {
+	font-size: 1em;
+	margin: 2em 0.75em 0.25em 0.75em;
+	font-weight: 400;
+	border-bottom: solid 2px lightgray;
+}
+
+#detailpage section:nth-of-type(8) button {
+	background-color: rgb(241, 241, 241);
+	color: black;
+	border: none;
+	padding: 0.75em 1em 0.75em 1em;
+	font-weight: 600;
+	font-size: 0.8em;
+	border-radius: 2em;
+	margin: 0.75em 0 0 0.75em;
+}
+
+#detailpage section:nth-of-type(8) button:last-of-type {
+	display: block;
+	background-color: white;
+	padding: 0;
+	color: black;
+	text-decoration: underline;
+	margin: 1.5em 0 0 0.75em;
+	font-size: 0.9em;
+}
+
+
+
+
+/* reviews */
+
+#detailpage .review {
+	margin: 1em;
+	padding: 1em 0em;
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	border-bottom: 1px solid lightgray;
+
+}
+
+#detailpage .review span {
+	
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#detailpage .review article {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#detailpage .review article h2 {
+	font-size: 0.8em;
+}
+
+#detailpage .review article > h3:first-of-type {
+	font-size: 0.8em;
+	font-weight: 400;
+	color: gray;
+}
+
+#detailpage .review article img {
+	width: 6em;
+}
+
+#detailpage .review article h2:nth-of-type(2) {
+	font-size: 1.25em;
+	margin-bottom: 1em;
+}
+
+#detailpage .review article > p:first-of-type {
+	font-size: 0.85em;
+	
+}
+
+#detailpage .review article button:first-of-type {
+	width: fit-content;
+	border: none;
+	background-color: white;
+	font-weight: 600;
+	font-size: 0.85em;
+}
+
+#detailpage .review article div:first-of-type {
+	margin-top: 3em;
+}
+
+#detailpage .review article div {
+	display: flex;
+	flex-direction: row;
+	gap: 0.75em;
+}
+
+#detailpage .review article div h3, #detailpage .review article div p {
+	font-size: 0.9em;
+}
+
+#detailpage .review article button:last-of-type {
+	font-weight: 600;
+	font-size: 0.85em;
+	width: fit-content;
+	border: none;
+	background-color: white;
+	margin: 1em 0;
+}
+
+#detailpage .review article > p:last-of-type {
+	font-size: 0.85em;
+	color: gray;
+}
+
+#detailpage > button:nth-of-type(3) {
+	background-color: white;
+	color: black;
+	border: 0.25em solid black;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.75em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 2em;
+	display: block;
+    margin: 2em auto 4em auto;
+}
+
+
+
+/* Similar to */
+
+#detailpage section:nth-of-type(12) {
+	position: relative;
+	overflow-x: auto;
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#detailpage section:nth-of-type(12)::-webkit-scrollbar {
+	display: none;
+}
+
+#detailpage section:nth-of-type(12) > h2 {
+	font-size: 1.25em;
+	margin: 1em 0 1em 0.75em;
+}
+
+#detailpage section:nth-of-type(12) ul {
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+	margin: 0;
+	list-style: none;
+}
+
+#detailpage section:nth-of-type(12) ul li {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	width: 20em;
+}
+
+
+#detailpage section:nth-of-type(12) ul li h2,
+#detailpage section:nth-of-type(12) ul li h3,
+#detailpage section:nth-of-type(12) ul li img {
+    flex-basis: 100%;
+}
+
+#detailpage section:nth-of-type(12) ul li > img:first-of-type {
+	width: 100%; 
+	height: 21em;
+	object-fit: cover;
+	border-radius: 0.5em;
+}
+
+#detailpage section:nth-of-type(12) ul li button:not(:last-of-type) {
+	width: fit-content;
+	border-radius: 50%;
+	border: 0.1em solid black;
+	padding: 0.7em;
+    margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#detailpage section:nth-of-type(12) ul li h2 {
+	font-size: 0.9em;
+}
+
+#detailpage section:nth-of-type(12) ul li h3 {
+	font-weight: 400;
+	font-size: 1em;
+}
+
+#detailpage section:nth-of-type(12) ul li button:last-of-type {
+	width: fit-content;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 0.75em;
+	border-radius: 4em;
+	margin-left: auto;
+}
+
+#detailpage section:nth-of-type(12) ul li button img {
+	width: 1em;
+
+}
+
+
+/* impact */
+
+#detailpage section:nth-of-type(13) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 3em 0.75em 1em 0.75em;
+}
+
+#detailpage section:nth-of-type(13) h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	width: 90%;
+}
+
+#detailpage section:nth-of-type(13) input[type="radio"] {
+	display: none;
+}
+
+#detailpage section:nth-of-type(13) input[type="radio"]:checked + label {
+	border-bottom: 3px solid black;
+
+}
+
+#detailpage section:nth-of-type(13) label {
+	font-size: 0.8em;
+	font-weight: 600;
+	margin-right: 3em;
+	padding: 0.25em 1em;
+
+}
+
+
+
+
+
+
+/* How its made */
+
+#detailpage > div:nth-of-type(2) {
+	overflow-x: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+}
+
+#detailpage > div:nth-of-type(2)::-webkit-scrollbar {
+	display: none;
+}
+
+#detailpage > div:nth-of-type(2) ul {
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	margin: 0;
+	padding: 2em 0em;
+}
+
+#detailpage > div:nth-of-type(2) ul li {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(248, 248, 248);
+	border-radius: 0.5em;
+	width: 18em;
+}
+
+#detailpage > div:nth-of-type(2) li img{
+	height: 10em;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5em 0.5em 0em 0em;
+}
+
+#detailpage > div:nth-of-type(2) li h2 {
+	font-size: 1.5em;
+	padding: 1rem 1.25rem 0.5rem 1.25rem;
+}
+
+#detailpage > div:nth-of-type(2) li p {
+	font-size: 0.9em;
+	padding: 0.5rem 1.25rem;
+}
+
+#detailpage > div:nth-of-type(2) li h3 {
+	font-size: 0.75em;
+	padding: 0.5rem 1.25rem;
+} 
+
+#detailpage > div:nth-of-type(2) ul li a {
+	background-color: black;
+	color: white;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 1.5em;
+	margin: 2rem 1.25rem 1rem 1.25rem;
+}
+
+
+/* where its made */
+
+#detailpage > div:nth-of-type(3) {
+	overflow-x: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+}
+
+#detailpage > div:nth-of-type(3)::-webkit-scrollbar {
+	display: none;
+}
+
+#detailpage > div:nth-of-type(3) ul {
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	margin: 0;
+	padding: 2em 0em;
+}
+
+#detailpage > div:nth-of-type(3) ul li {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(248, 248, 248);
+	border-radius: 0.5em;
+	width: 18em;
+}
+
+#detailpage > div:nth-of-type(3) li img{
+	height: 10em;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5em 0.5em 0em 0em;
+}
+
+#detailpage > div:nth-of-type(3) li h2 {
+	font-size: 1.5em;
+	padding: 1rem 1.25rem 0.5rem 1.25rem;
+}
+
+
+#detailpage > div:nth-of-type(3) li h3 {
+	font-size: 0.75em;
+	padding: 0.5rem 1.25rem;
+} 
+
+#detailpage > div:nth-of-type(3) ul li a {
+	background-color: black;
+	color: white;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 600;
+	border-radius: 3em;
+	padding: 0.75em 1.5em;
+	margin: 2rem 1.25rem 1rem 1.25rem;
+}
+
+
+	/* footprint */
+	
+	#detailpage > a:last-of-type {
+		background-color: black;
+		color: white;
+		width: fit-content;
+		text-decoration: none;
+		font-size: 0.9em;
+		font-weight: 600;
+		border-radius: 3em;
+		padding: 1.5em 3em;
+		display: block;
+		margin: 2em auto 4em auto;
+	}
 
 
 
@@ -858,8 +1264,7 @@ footer {
 		margin-bottom: 2em;
 	}
 	
-	
-	
+
 	
 	/* Form */
 	
