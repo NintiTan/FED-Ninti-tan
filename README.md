@@ -60,11 +60,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   Ik merkte met Macs ingebouwde VoiceOver functie dat hij de hele website goed in volgorde na liep. Wel werden soms delen onnodig herhaald zoals in de header de shipping informatie ging hij twee keer over heen. En daarnaast waren veel knoppen of titels niet goed benaamd (zie foto). Deze namen bevatten rare codes of letters die verwarrend kunnen zijn.
-      <img src="readme-images/VoiceOver.png" width="375px" alt="screenshot van de voiceover">
+  <img src="readme-images/VoiceOver.png" width="375px" alt="screenshot van de voiceover">
   
   Wat betreft het contrast was dit lastig te meten met de chromeDev tools. Dit is omdat naast zwart op wit contrast werd er verder alleen gewerkt met afbeeldingen op de achtergrond. Ik heb de CCA van TPGi gebruikt en heb verschillende afbeeldingen gecheckt. Hieruit kon ik zien dat bij sommige van deze afbeeldingen het niet helemaal ideaal was.
-        <img src="readme-images/Contrast1.png" width="375px" alt="screenshot van de voiceover">
-        <img src="readme-images/Contrast2.png" width="375px" alt="screenshot van de voiceover">
+  <img src="readme-images/Contrast1.png" width="375px" alt="screenshot van de voiceover">
+  <img src="readme-images/Contrast2.png" width="375px" alt="screenshot van de voiceover">
+
+  <img src="readme-images/checklist1.HEIC" width="375px" alt="screenshot van checklist">
+  <img src="readme-images/checklist2.HEIC" width="375px" alt="screenshot van checklist">
+  <img src="readme-images/checklist3.HEIC" width="375px" alt="screenshot van checklist">
+  <img src="readme-images/checklist4.HEIC" width="375px" alt="screenshot van checklist">
+  <img src="readme-images/checklist5.HEIC" width="375px" alt="screenshot van checklist">
+
+    
+
+
   
     
 
@@ -167,6 +177,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  <img src="readme-images/voiceover-test-2.png" width="375px" alt="screenshot van de voiceover">
+
+  Ik heb dit keer mijn eigen website getest met de voiceover van mac. Ik liep rustig alle links en headers af om te kijken of deze duidelijke namen en volgorde hebben. bij beide categorieen vond ik dat de structuur goed in elkaar zat en dat het duidelijk was waar het over ging. 
+
+
+
 
 </details>
 
