@@ -2,6 +2,7 @@
 
 
 // Image animation
+// gebruikte bronnen: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
 document.addEventListener("DOMContentLoaded", () => {
     const hiddenElements = document.querySelectorAll(".hidden");
@@ -22,6 +23,7 @@ let currentImage = 0;
 
 
 // product carousel
+// gebruikte bronnen: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 
 const captions = [
   { p1: "Synched Fligh Small Smolder Blue", p2: "1/3" },
@@ -30,7 +32,7 @@ const captions = [
 ];
 
 function showImage(current) {
-  const carousel = document.querySelector('div > div');
+  const carousel = document.querySelector('div:first-of-type > div');
   const totalImages = carousel.children.length;
   currentImage = (current + totalImages) % totalImages;
   carousel.style.transform = `TranslateX(-${currentImage * 100}%)`;
@@ -41,7 +43,6 @@ function showImage(current) {
   p1.textContent = captions[currentImage].p1;
   p2.textContent = captions[currentImage].p2
 }
-
 
 
 function nextImage() {
@@ -76,3 +77,7 @@ updateListVisibility();
 
 howItsMadeRadio.addEventListener('change', updateListVisibility);
 whereItsMadeRadio.addEventListener('change', updateListVisibility);
+
+
+// page theme
+

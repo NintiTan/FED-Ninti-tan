@@ -54,7 +54,6 @@ p {
 }
 
 
-
 /* Animations */
 
 .hidden {
@@ -72,6 +71,13 @@ p {
 
 
 /* Header */
+
+header input{
+    position: absolute;
+    top: 1em;
+    left: 1em; 
+    z-index: 1000;
+}
 
 /* Shipping information */
 
