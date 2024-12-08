@@ -60,8 +60,8 @@ showImage(0);
 
 const howItsMadeRadio = document.getElementById('how-its-made');
 const whereItsMadeRadio = document.getElementById('where-its-made');
-const howItsMadeList = document.querySelector('#detailpage > div:nth-of-type(2)');
-const whereItsMadeList = document.querySelector('#detailpage > div:nth-of-type(3)');
+const howItsMadeList = document.querySelector('#detailpage > div:nth-of-type(3)');
+const whereItsMadeList = document.querySelector('#detailpage > div:nth-of-type(4)');
 
 function updateListVisibility() {
     if (howItsMadeRadio.checked) {
