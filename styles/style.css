@@ -375,24 +375,24 @@ header nav ul li img {
 
 /* Product afbeeldingen */
 
-#detailpage > div:first-of-type {
+#detailpage > div:first-of-type div:first-of-type {
   position: relative;
   width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
-#detailpage > div:first-of-type > div {
+#detailpage > div:first-of-type div:first-of-type > div {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-#detailpage > div:first-of-type > div img {
+#detailpage > div:first-of-type div:first-of-type > div img {
   width: 100%;
   flex-shrink: 0;
 }
 
-#detailpage > div:first-of-type button {
+#detailpage > div:first-of-type div:first-of-type button {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -406,21 +406,21 @@ header nav ul li img {
   box-shadow: 2px 2px 2px lightgray;
 }
 
-#detailpage > div:first-of-type button img {
+#detailpage > div:first-of-type div:first-of-type button img {
   width: 0.5em;
   align-self: center;
 }
 
-#detailpage > div:first-of-type button:first-of-type {
+#detailpage > div:first-of-type div:first-of-type button:first-of-type {
   left: 1em;
 }
 
-#detailpage > div:first-of-type button:nth-of-type(2) {
+#detailpage > div:first-of-type div:first-of-type button:nth-of-type(2) {
   right: 1em;
 }
 
-#detailpage > div:first-of-type p:first-of-type,
-#detailpage > div:first-of-type p:nth-of-type(2) {
+#detailpage > div:first-of-type div:first-of-type p:first-of-type,
+#detailpage > div:first-of-type div:first-of-type p:nth-of-type(2) {
   position: absolute;
   z-index: 1;
   color: black;
@@ -431,19 +431,20 @@ header nav ul li img {
   font-weight: 600;
 }
 
-#detailpage > div:first-of-type p:first-of-type {
+#detailpage > div:first-of-type div:first-of-type p:first-of-type {
   top: 90%;
   left: 4%;
 }
 
-#detailpage > div:first-of-type p:nth-of-type(2) {
+#detailpage > div:first-of-type div:first-of-type p:nth-of-type(2) {
   top: 90%;
   left: 88%;
 }
 
+
 /* heading product */
 
-#detailpage > a:first-of-type {
+#detailpage > div:first-of-type a:first-of-type {
   display: flex;
   gap: 0.75em;
   text-decoration: none;
@@ -451,22 +452,22 @@ header nav ul li img {
   margin: 1.25em 0em 0.75em 1em;
 }
 
-#detailpage a:first-of-type img {
+#detailpage > div:first-of-type a:first-of-type img {
   width: 0.5em;
 }
 
-#detailpage a:first-of-type p {
+#detailpage > div:first-of-type a:first-of-type p {
   font-size: 0.75em;
   color: black;
 }
 
-#detailpage > div:nth-of-type(2) section:first-of-type h1 {
+#detailpage > div:first-of-type div:nth-of-type(3) section:first-of-type h1 {
   font-size: 1.25em;
   width: 70%;
   margin-left: 0.75em;
 }
 
-#detailpage > div:nth-of-type(2) section:first-of-type button {
+#detailpage > div:first-of-type div:nth-of-type(3) section:first-of-type button {
   display: flex;
   flex-direction: row;
   border: none;
@@ -475,16 +476,16 @@ header nav ul li img {
   gap: 0.5em;
 }
 
-#detailpage > div:nth-of-type(2) section:first-of-type button img {
+#detailpage > div:first-of-type div:nth-of-type(3) section:first-of-type button img {
   width: 1.25em;
 }
 
-#detailpage > div:nth-of-type(2) section:first-of-type button p {
+#detailpage > div:first-of-type div:nth-of-type(3) section:first-of-type button p {
   text-decoration: underline;
   font-weight: 500;
 }
 
-#detailpage > div:nth-of-type(2) section:first-of-type h2 {
+#detailpage > div:first-of-type div:nth-of-type(3) section:first-of-type h2 {
   font-size: 1em;
   margin-left: 1em;
   margin-bottom: 1.5em;
@@ -492,18 +493,18 @@ header nav ul li img {
 
 /* product informatie */
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(2) h2,
-#detailpage > div:nth-of-type(2) section:nth-of-type(2) p:first-of-type {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) h2,
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) p:first-of-type {
   display: inline-block;
   font-size: 0.8em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(2) h2 {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) h2 {
   margin-left: 1em;
   margin-bottom: 0.5em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(2) ul {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) ul {
   display: flex;
   flex-direction: row;
   gap: 0.75em;
@@ -512,56 +513,42 @@ header nav ul li img {
   list-style: none;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(2) ul li button {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) ul li button {
   border-radius: 50%;
   border: 0.1em solid black;
   padding: 1.2em;
 }
 
-#detailpage
-  > div:nth-of-type(2)
-  section:nth-of-type(2)
-  ul
-  li:first-of-type
-  button {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) ul li:first-of-type button {
   background-color: rgb(33, 33, 49);
 }
 
-#detailpage
-  > div:nth-of-type(2)
-  section:nth-of-type(2)
-  ul
-  li:nth-of-type(2)
-  button {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) ul li:nth-of-type(2) button {
   background-color: rgb(197, 98, 11);
 }
 
 #detailpage
-  > div:nth-of-type(2)
-  section:nth-of-type(2)
-  ul
-  li:nth-of-type(3)
-  button {
+  > div:first-of-type div:nth-of-type(3) section:nth-of-type(2) ul li:nth-of-type(3) button {
   background-color: rgb(228, 218, 210);
 }
 
 /* Sizes */
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(3) h2 {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(3) h2 {
   display: inline-block;
   margin-left: 1em;
   margin-bottom: 0.5em;
   font-size: 0.8em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(3) a {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(3) a {
   display: inline-block;
   font-size: 0.8em;
   text-decoration: underline;
   color: black;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(3) ul {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(3) ul {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
@@ -571,7 +558,7 @@ header nav ul li img {
   margin-bottom: 1em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(3) ul li {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(3) ul li {
   display: flex;
   justify-content: center;
   background-color: whitesmoke;
@@ -580,7 +567,7 @@ header nav ul li img {
   border-radius: 0.25em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(3) ul li button {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(3) ul li button {
   font-size: 0.75em;
   font-weight: 600;
   background-color: whitesmoke;
@@ -589,13 +576,13 @@ header nav ul li img {
 
 /* special offers */
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(4) h2,
-#detailpage section:nth-of-type(4) p {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(4) h2,
+#detailpage > div:first-of-type section:nth-of-type(4) p {
   font-size: 0.9em;
   margin-left: 0.75em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(4) p {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(4) p {
   margin-bottom: 1.5em;
   margin-top: 0.25em;
   font-weight: 400;
@@ -603,7 +590,7 @@ header nav ul li img {
 
 /* add to bag */
 
-#detailpage > div:nth-of-type(2) > button:first-of-type {
+#detailpage > div:first-of-type div:nth-of-type(3) > button:first-of-type {
   background-color: black;
   padding: 1.5em;
   border-radius: 4em;
@@ -611,11 +598,11 @@ header nav ul li img {
   border: none;
 }
 
-#detailpage > div:nth-of-type(2) > button:first-of-type img {
+#detailpage > div:first-of-type div:nth-of-type(3) > button:first-of-type img {
   width: 1.5em;
 }
 
-#detailpage > div:nth-of-type(2) > button:nth-of-type(2) {
+#detailpage > div:first-of-type div:nth-of-type(3) > button:nth-of-type(2) {
   text-align: center;
   background-color: black;
   padding: 1.5em 7.8em;
@@ -625,8 +612,8 @@ header nav ul li img {
   color: white;
 }
 
-#detailpage > div:nth-of-type(2) > p:first-of-type,
-#detailpage > div:nth-of-type(2) > p:nth-of-type(2) {
+#detailpage > div:first-of-type div:nth-of-type(3) > p:first-of-type,
+#detailpage > div:first-of-type div:nth-of-type(3) > p:nth-of-type(2) {
   margin: 1.5em 0.75em 0 0.75em;
   font-size: 0.9em;
   line-height: 1.5em;
@@ -634,18 +621,18 @@ header nav ul li img {
 
 /* details */
 
-#detailpage > div:nth-of-type(2) > details {
+#detailpage > div:first-of-type div:nth-of-type(3) > details {
   margin: 1.5em 0.75em;
   padding: 0.5em 0em;
   border-top: 0.15em solid black;
 }
 
-#detailpage > div:nth-of-type(2) > details summary {
+#detailpage > div:first-of-type div:nth-of-type(3) > details summary {
   font-size: 0.9em;
   font-weight: 600;
 }
 
-#detailpage > div:nth-of-type(2) > details:first-of-type ul {
+#detailpage > div:first-of-type div:nth-of-type(3) > details:first-of-type ul {
   display: flex;
   flex-direction: column;
   font-size: 0.9em;
@@ -655,8 +642,8 @@ header nav ul li img {
   line-height: 1.5em;
 }
 
-#detailpage > div:nth-of-type(2) details:first-of-type ul li button,
-#detailpage > div:nth-of-type(2) details:first-of-type ul li a {
+#detailpage > div:first-of-type div:nth-of-type(3) details:first-of-type ul li button,
+#detailpage > div:first-of-type div:nth-of-type(3) details:first-of-type ul li a {
   font-weight: 600;
   border: none;
   text-decoration: underline;
@@ -665,33 +652,33 @@ header nav ul li img {
   font-size: 0.9em;
 }
 
-#detailpage > div:nth-of-type(2) details:nth-of-type(2) h2,
-#detailpage > div:nth-of-type(2) details:nth-of-type(3) h2 {
+#detailpage > div:first-of-type div:nth-of-type(3) details:nth-of-type(2) h2,
+#detailpage > div:first-of-type div:nth-of-type(3) details:nth-of-type(3) h2 {
   font-size: 0.9em;
   margin: 0 0.75em;
 }
 
-#detailpage > div:nth-of-type(2) details:nth-of-type(2) h2:first-of-type,
-#detailpage > div:nth-of-type(2) details:nth-of-type(3) h2:first-of-type {
+#detailpage > div:first-of-type div:nth-of-type(3) details:nth-of-type(2) h2:first-of-type,
+#detailpage > div:first-of-type div:nth-of-type(3) details:nth-of-type(3) h2:first-of-type {
   margin-top: 2.5em;
 }
 
-#detailpage > div:nth-of-type(2) details:nth-of-type(2) p,
-#detailpage > div:nth-of-type(2) details:nth-of-type(3) p {
+#detailpage > div:first-of-type div:nth-of-type(3) details:nth-of-type(2) p,
+#detailpage > div:first-of-type div:nth-of-type(3) details:nth-of-type(3) p {
   font-size: 0.9em;
   margin: 0.25em 0.75em 1.5em 0.75em;
 }
 
 /* icons */
 
-#detailpage > div:nth-of-type(2) > img {
+#detailpage > div:first-of-type div:nth-of-type(3) > img {
   width: 3em;
   margin-left: 0.75em;
 }
 
 /* built for years */
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(5) {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(5) {
   display: flex;
   flex-direction: column;
   margin: 2em 0.75em 3em 0.75em;
@@ -701,12 +688,12 @@ header nav ul li img {
   background-color: whitesmoke;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(5) h2 {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(5) h2 {
   font-size: 0.9em;
   margin-bottom: 0.5em;
 }
 
-#detailpage > div:nth-of-type(2) section:nth-of-type(5) p {
+#detailpage > div:first-of-type div:nth-of-type(3) section:nth-of-type(5) p {
   font-size: 0.8em;
 }
 
@@ -772,7 +759,59 @@ header nav ul li img {
   margin-top: 0.5em;
 }
 
+@media only screen and (max-width: 999px) {
+
+#detailpage > div:first-of-type .gallery {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+}
+
 @media only screen and (min-width: 1000px) {
+
+	#detailpage > div:first-of-type {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 1em;
+		}
+
+	#detailpage > div:first-of-type div:nth-of-type(3){
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	#detailpage > div:first-of-type > a, #detailpage > div:first-of-type .carousel {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
+	#detailpage > div:first-of-type .gallery img {
+		width: 45%;
+		height: auto;
+
+	}
+
+	#detailpage > div:first-of-type .gallery {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+
+	#detailpage > div:first-of-type div:nth-of-type(3) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
 }
 
 /* search */

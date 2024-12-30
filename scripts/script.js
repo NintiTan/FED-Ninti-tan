@@ -32,13 +32,13 @@ const captions = [
 ];
 
 function showImage(current) {
-  const carousel = document.querySelector('div:first-of-type > div');
+  const carousel = document.querySelector('div:first-of-type div:first-of-type > div');
   const totalImages = carousel.children.length;
   currentImage = (current + totalImages) % totalImages;
   carousel.style.transform = `TranslateX(-${currentImage * 100}%)`;
 
-  const p1 = document.querySelector('#detailpage div p:first-of-type');
-  const p2 = document.querySelector('#detailpage div  p:nth-of-type(2)');
+  const p1 = document.querySelector('#detailpage > div:first-of-type div p:first-of-type');
+  const p2 = document.querySelector('#detailpage > div:first-of-type div p:nth-of-type(2)');
 
   p1.textContent = captions[currentImage].p1;
   p2.textContent = captions[currentImage].p2
