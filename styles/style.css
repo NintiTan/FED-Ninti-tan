@@ -699,25 +699,32 @@ header nav ul li img {
 
 /* buyers info */
 
-#detailpage > section:first-of-type {
+#detailpage > div:nth-of-type(2) {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#detailpage > div:nth-of-type(2) section:first-of-type {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 1em;
   height: 4em;
+  width: 70%;
 }
 
-#detailpage > section:first-of-type img {
+#detailpage > div:nth-of-type(2) section:first-of-type img {
   width: 9em;
   margin-bottom: 0.5em;
 }
 
-#detailpage > section:first-of-type h2 {
+#detailpage > div:nth-of-type(2) section:first-of-type h2 {
   font-size: 1em;
   margin-bottom: 0.5em;
 }
 
-#detailpage > section:first-of-type p {
+#detailpage > div:nth-of-type(2) section:first-of-type p {
   font-size: 0.8em;
   font-weight: 600;
   color: rgb(71, 71, 71);
@@ -726,37 +733,38 @@ header nav ul li img {
 }
 
 /* activities */
-#detailpage > section:nth-of-type(2) {
+#detailpage > div:nth-of-type(2) section:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   margin: 2em 0.75em 3em 0.75em;
   gap: 1em;
 }
 
-#detailpage > section:nth-of-type(2) h2 {
+#detailpage > div:nth-of-type(2) section:nth-of-type(2) h2 {
   font-size: 1em;
   margin-bottom: 0.5em;
 }
 
-#detailpage > section:nth-of-type(2) p {
+#detailpage > div:nth-of-type(2) section:nth-of-type(2) p {
   font-size: 0.8em;
   font-weight: 600;
 }
 
-#detailpage > section:nth-of-type(2) p:nth-of-type(2) {
+#detailpage > div:nth-of-type(2) section:nth-of-type(2) p:nth-of-type(2) {
   color: rgb(71, 71, 71);
 }
 
-#detailpage > section:nth-of-type(2) button {
+#detailpage > section:first-of-type button:first-of-type {
   background-color: black;
   color: white;
   border: none;
-  padding: 1em 1.15em 1em 1.15em;
+  padding: 0.8em 1.25em;
   font-weight: 600;
-  font-size: 0.8em;
-  width: 50%;
+  font-size: 1em;
+  width: fit-content;
   border-radius: 5em;
   margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 999px) {
@@ -775,16 +783,16 @@ header nav ul li img {
 
 @media only screen and (min-width: 1000px) {
 
+	#detailpage {
+		margin: 0 2em;
+	}
+
 	#detailpage > div:first-of-type {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin: 1em;
 		}
 
-	#detailpage > div:first-of-type div:nth-of-type(3){
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
 
 	#detailpage > div:first-of-type > a, #detailpage > div:first-of-type .carousel {
 		clip: rect(0 0 0 0);
@@ -816,7 +824,7 @@ header nav ul li img {
 
 /* search */
 
-#detailpage > section:nth-of-type(3) form input {
+#detailpage > section:first-of-type form input {
   width: 95%;
   margin: 0 0.75em;
   padding: 0.8em;
@@ -824,14 +832,14 @@ header nav ul li img {
   border-radius: 0.25em;
 }
 
-#detailpage > section:nth-of-type(3) h2 {
+#detailpage > section:first-of-type h2 {
   font-size: 1em;
   margin: 2em 0.75em 0.25em 0.75em;
   font-weight: 400;
   border-bottom: solid 2px lightgray;
 }
 
-#detailpage > section:nth-of-type(3) button {
+#detailpage > section:first-of-type button {
   background-color: rgb(241, 241, 241);
   color: black;
   border: none;
@@ -842,7 +850,7 @@ header nav ul li img {
   margin: 0.75em 0 0 0.75em;
 }
 
-#detailpage > section:nth-of-type(3) button:last-of-type {
+#detailpage > section:first-of-type button:last-of-type {
   display: block;
   background-color: white;
   padding: 0;
